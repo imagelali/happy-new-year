@@ -1,0 +1,124 @@
+
+body {
+  background-image: url('assets/Advent.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+audio {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 3;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+#layout {  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  position: relative;
+  z-index: 2;
+}
+#layout > div {
+  flex:2;
+}
+
+
+#button-container {
+  display: flex;
+  justify-content: space-evenly;
+  bottom:30px;  
+}
+.party {
+  margin: 30px;
+  padding: 10px 20px;
+  font-size: 25px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.footer {
+  position: fixed;
+  bottom:0px;
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+  z-index: 2;
+  padding: 0px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+
+@media (max-width: 768px) {
+  .party {
+    font-size: 20px;
+    padding: 8px 16px;
+    margin: 20px;
+  }
+
+  .footer {
+    font-size: 18px;
+  }
+  #layout {
+    flex-direction: column;
+  }
+  #layout > div {
+    margin: 10px;
+  }
+  #button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .party {
+    font-size: 18px;
+    padding: 6px 12px;
+    margin: 15px;
+  }
+
+  .footer {
+    font-size: 16px;
+  }
+  
+  #layout {
+    flex-direction: column;
+  }
+  
+  #layout > div {
+    margin: 10px;
+  }
+  
+  #button-container {
+    flex-direction: column;
+    align-items: center;
+
+}
+}
+
+
+
+    
+
+    
+  
